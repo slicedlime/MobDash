@@ -1,0 +1,13 @@
+# Show team switching menu to @s
+
+tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Join ", "color":"white","clickEvent":{"action":"run_command", "value":"/trigger md_action set 101"},"extra":[{"selector":"@e[type=area_effect_cloud,scores={md_team=1}]"}]},{"text":"]","color":"gold", "bold": true}]
+tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Join ", "color":"white","clickEvent":{"action":"run_command", "value":"/trigger md_action set 102"},"extra":[{"selector":"@e[type=area_effect_cloud,scores={md_team=2}]"}]},{"text":"]","color":"gold", "bold": true}]
+tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Join ", "color":"white","clickEvent":{"action":"run_command", "value":"/trigger md_action set 103"},"extra":[{"selector":"@e[type=area_effect_cloud,scores={md_team=3}]"}]},{"text":"]","color":"gold", "bold": true}]
+tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Join ", "color":"white","clickEvent":{"action":"run_command", "value":"/trigger md_action set 104"},"extra":[{"selector":"@e[type=area_effect_cloud,scores={md_team=4}]"}]},{"text":"]","color":"gold", "bold": true}]
+tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Join ", "color":"white","clickEvent":{"action":"run_command", "value":"/trigger md_action set 105"},"extra":[{"selector":"@e[type=area_effect_cloud,scores={md_team=5}]"}]},{"text":"]","color":"gold", "bold": true}]
+tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Join ", "color":"white","clickEvent":{"action":"run_command", "value":"/trigger md_action set 106"},"extra":[{"selector":"@e[type=area_effect_cloud,scores={md_team=6}]"}]},{"text":"]","color":"gold", "bold": true}]
+tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Join ", "color":"white","clickEvent":{"action":"run_command", "value":"/trigger md_action set 107"},"extra":[{"selector":"@e[type=area_effect_cloud,scores={md_team=7}]"}]},{"text":"]","color":"gold", "bold": true}]
+tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Join ", "color":"white","clickEvent":{"action":"run_command", "value":"/trigger md_action set 108"},"extra":[{"selector":"@e[type=area_effect_cloud,scores={md_team=8}]"}]},{"text":"]","color":"gold", "bold": true}]
+tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Join ", "color":"white","clickEvent":{"action":"run_command", "value":"/trigger md_action set 109"},"extra":[{"selector":"@e[type=area_effect_cloud,scores={md_team=9}]"}]},{"text":"]","color":"gold", "bold": true}]
+
+scoreboard players set @s md_ticks -1800

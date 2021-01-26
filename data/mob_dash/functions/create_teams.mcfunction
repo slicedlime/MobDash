@@ -25,4 +25,8 @@ summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_team"], CustomName
 team add black {"text":"The Blackstone Brutes","color":"dark_gray"}
 team modify black color dark_gray
 
+summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_team"], CustomName:'{"text":"The Viewing Vexes","color":"gray","italic": true}', Color:9}
+team add gray {"text":"The Viewing Vexes","color":"gray"}
+team modify black color gray
+
 execute as @e[type=area_effect_cloud,tag=md_team] store result score @s md_team run data get entity @s Color
