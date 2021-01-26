@@ -14,7 +14,8 @@ tag @e[type=area_effect_cloud,tag=md_selected] remove md_selected
 execute as @e[type=area_effect_cloud,tag=md_target] if score @s md_target = $Random md_state run tag @s add md_selected
 
 # Display name of target
-title @a title ["",{"text":"New Target: ","color":"gold"},{"selector":"@e[type=area_effect_cloud,tag=md_selected]","color":"red"}]
+title @a title ""
+title @a subtitle ["",{"text":"New Target: ","color":"gold"},{"selector":"@e[type=area_effect_cloud,tag=md_selected]","color":"red"}]
 tellraw @a ["",{"text":"New Target: ","color":"gold"},{"selector":"@e[type=area_effect_cloud,tag=md_selected]","color":"red"}]
 
 scoreboard players operation $Target md_state = $Random md_state

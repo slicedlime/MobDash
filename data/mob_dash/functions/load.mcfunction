@@ -4,6 +4,12 @@ scoreboard objectives add md_state dummy "Mob Dash Game State"
 scoreboard objectives add md_target dummy "Mob Dash Target ID"
 scoreboard objectives add md_team dummy "Mob Dash Team ID"
 scoreboard objectives add md_const dummy "Mob Dash Constants"
+scoreboard objectives add md_score dummy "Mob Dash Team Scores"
+scoreboard objectives add md_score_display dummy "Team Scores"
+scoreboard objectives add md_player_scores dummy "Scores"
+scoreboard objectives setdisplay list md_player_scores
+
+function mob_dash:create_target_scoreboards
 
 scoreboard players set 2 md_const 2
 
