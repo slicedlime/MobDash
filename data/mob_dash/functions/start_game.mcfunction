@@ -21,3 +21,12 @@ scoreboard players set @e[type=area_effect_cloud,tag=md_team] md_score 0
 scoreboard players set $Tick md_state 0
 scoreboard players operation $EndTick md_state = $Timeout md_state
 scoreboard players operation $EndTick md_state *= 1200 md_const
+
+# Set appropriate difficulty
+execute if score $GameDifficulty md_state matches 1 run difficulty easy
+execute if score $GameDifficulty md_state matches 2 run difficulty normal
+execute if score $GameDifficulty md_state matches 3 run difficulty hard
+
+# Reset scores
+scoreboard players reset * md_score_display
+scoreboard objectives setdisplay sidebar

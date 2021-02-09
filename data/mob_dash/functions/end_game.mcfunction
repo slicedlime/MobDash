@@ -20,3 +20,5 @@ execute if score $WinningTeams md_state matches 2.. run tellraw @a [{"text":"It'
 execute if score $WinningTeams md_state matches 1 run tellraw @a ["",{"text":"Team ","color": "gold"},{"selector":"@e[type=area_effect_cloud,tag=md_winner]"},{"text":" wins!","color":"gold"}]
 
 tellraw @a "Returning to menu in 60 seconds..."
+
+scoreboard objectives setdisplay sidebar md_score_display

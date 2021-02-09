@@ -30,6 +30,9 @@ scoreboard players add $Timeout md_state 0
 scoreboard players add $Scoring md_state 0
 scoreboard players add $Difficulty md_state 0
 
+execute store result score $Temp md_state run difficulty
+execute if score $Temp md_state matches 1.. run scoreboard players operation $GameDifficulty md_state = $Temp md_state
+
 function mob_dash:update_scoring_text
 function mob_dash:update_difficulty_text
 
