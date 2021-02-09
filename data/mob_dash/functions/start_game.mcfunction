@@ -17,3 +17,7 @@ worldborder set 60000000
 scoreboard players set $State md_state 1
 scoreboard players set $Target md_state 0
 scoreboard players set @e[type=area_effect_cloud,tag=md_team] md_score 0
+
+scoreboard players set $Tick md_state 0
+scoreboard players operation $EndTick md_state = $Timeout md_state
+scoreboard players operation $EndTick md_state *= 1200 md_const
