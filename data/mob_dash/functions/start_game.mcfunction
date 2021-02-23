@@ -45,3 +45,5 @@ execute if score $Difficulty md_state matches 2 run scoreboard players set $Diff
 
 # Scale by number of active ActiveTeams
 scoreboard players operation $DifficultyFactor md_state *= $ActiveTeams md_state
+
+execute if score $EndTick md_state matches 1.. run function mob_dash:setup_timer_bar

@@ -9,3 +9,5 @@ execute unless score $Win md_state matches 0 run function mob_dash:check_win_sco
 execute unless score $Timeout md_state matches 0 run function mob_dash:check_time_limit
 
 title @a actionbar ["",{"text":"Target: ","color":"gold"},{"selector":"@e[type=area_effect_cloud,tag=md_selected]","color":"red"}]
+
+execute if score $EndTick md_state matches 1.. run function mob_dash:update_timer_bar
