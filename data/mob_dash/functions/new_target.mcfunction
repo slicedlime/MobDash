@@ -10,6 +10,7 @@ scoreboard players add $MobDifficulty md_state 1
 # Figure out how many choices there are in level X
 tag @e[type=area_effect_cloud,tag=md_eligible] remove md_eligible
 execute as @e[type=area_effect_cloud,tag=md_target] if score @s md_level <= $CurrentLevel md_state run tag @s add md_eligible
+scoreboard players set $Max md_state 0
 scoreboard players operation $Max md_state > @e[type=area_effect_cloud,tag=md_eligible] md_target
 
 # Randomize a number in [0-X)
