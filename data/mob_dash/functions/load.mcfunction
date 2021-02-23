@@ -26,7 +26,6 @@ scoreboard players set 2 md_const 2
 scoreboard players set 1200 md_const 1200
 
 scoreboard players add $Target md_state 0
-scoreboard players add $Level md_state 0
 scoreboard players add $Win md_state 0
 scoreboard players add $Timeout md_state 0
 
