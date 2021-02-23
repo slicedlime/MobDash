@@ -30,3 +30,9 @@ execute if score $GameDifficulty md_state matches 3 run difficulty hard
 # Reset scores
 scoreboard players reset * md_score_display
 scoreboard objectives setdisplay sidebar
+
+# Set starting mob difficulty
+scoreboard players set $MobDifficulty md_state 1
+execute if score $Difficulty md_state matches 0 run scoreboard players set $DifficultyFactor md_state 100
+execute if score $Difficulty md_state matches 1 run scoreboard players set $DifficultyFactor md_state 50
+execute if score $Difficulty md_state matches 2 run scoreboard players set $DifficultyFactor md_state 25

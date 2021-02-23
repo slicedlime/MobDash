@@ -11,6 +11,7 @@ scoreboard objectives add TimeLimit trigger "Mob Dash Time Limit"
 # Game states
 scoreboard objectives add md_target dummy "Mob Dash Target ID"
 scoreboard objectives add md_level dummy "Mob Dash Target Levels"
+scoreboard objectives add md_reward dummy "Mob Dash Target Rewards"
 scoreboard objectives add md_team dummy "Mob Dash Team ID"
 scoreboard objectives add md_const dummy "Mob Dash Constants"
 scoreboard objectives add md_score dummy "Mob Dash Team Scores"

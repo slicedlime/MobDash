@@ -35,5 +35,8 @@ summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_target","md_level_
 
 execute as @e[type=area_effect_cloud,tag=md_target] store result score @s md_target run data get entity @s Color
 scoreboard players set @e[type=area_effect_cloud,tag=md_level_1] md_level 1
+scoreboard players set @e[type=area_effect_cloud,tag=md_level_1] md_reward 1
 scoreboard players set @e[type=area_effect_cloud,tag=md_level_2] md_level 2
+scoreboard players set @e[type=area_effect_cloud,tag=md_level_2] md_reward 3
 scoreboard players set @e[type=area_effect_cloud,tag=md_level_3] md_level 3
+scoreboard players set @e[type=area_effect_cloud,tag=md_level_3] md_reward 10

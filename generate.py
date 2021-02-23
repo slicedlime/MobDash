@@ -41,6 +41,10 @@ level_3_mobs = [
     'guardian'
 ]
 
+scores = [
+    1, 3, 10
+]
+
 all_mobs = level_1_mobs + level_2_mobs + level_3_mobs
 
 def get_display_name(mob):
@@ -85,6 +89,7 @@ with open('data/mob_dash/functions/create_targets.mcfunction', 'w') as file:
     file.write('\nexecute as @e[type=area_effect_cloud,tag=md_target] store result score @s md_target run data get entity @s Color\n')
     for i in range(1, 4):
         file.write('scoreboard players set @e[type=area_effect_cloud,tag=md_level_' + str(i) + '] md_level ' + str(i) + '\n')
+        file.write('scoreboard players set @e[type=area_effect_cloud,tag=md_level_' + str(i) + '] md_reward ' + str(scores[i - 1]) + '\n')
 
 with open('data/mob_dash/functions/detect_kill.mcfunction', 'w') as file:
     file.write('# Detect if a target has been killed (auto-generated file)\n\n')
