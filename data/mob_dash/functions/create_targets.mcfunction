@@ -1,4 +1,4 @@
-# Create target data
+# Create target data (auto-generated file)
 
 summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_target","md_level_1","md_random","md_true"], CustomName:'"Zombie"', Color:1}
 summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_target","md_level_1","md_random"], CustomName:'"Skeleton"', Color:2}

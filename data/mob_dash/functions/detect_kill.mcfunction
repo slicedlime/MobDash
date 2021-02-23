@@ -1,4 +1,4 @@
-# Detect if a target has been killed
+# Detect if a target has been killed (auto-generated file)
 
 execute if score $Target md_state matches 1 as @a[scores={md_zombie=1..}] run function mob_dash:award_kill
 scoreboard players reset * md_zombie
