@@ -2,10 +2,10 @@
 
 execute if score $Level md_state matches 0 run scoreboard players set $Level md_state 1
 
-scoreboard players add $MobDifficulty md_state 1
 scoreboard players operation $CurrentLevel md_state = $MobDifficulty md_state
 scoreboard players operation $CurrentLevel md_state /= $DifficultyFactor md_state
 scoreboard players add $CurrentLevel md_state 1
+scoreboard players add $MobDifficulty md_state 1
 
 # Figure out how many choices there are in level X
 tag @e[type=area_effect_cloud,tag=md_eligible] remove md_eligible
