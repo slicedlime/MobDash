@@ -29,7 +29,8 @@ scoreboard players add @a md_ticks 1
 
 scoreboard players enable @a md_action
 
-execute as @a[scores={md_ticks=600..}] run function mob_dash:push_menu
+execute as @a[scores={md_ticks=600..},tag=!md_tutorial] run function mob_dash:push_menu
+execute as @a[tag=md_tutorial] run function mob_dash:tick_tutorial
 
 execute as @a[scores={WinScore=-2147483647..2147483647}] run function mob_dash:set_win_score
 scoreboard players enable @a WinScore
@@ -47,6 +48,7 @@ execute as @a[scores={md_action=3}] if entity @p[scores={md_team=1..8}] run func
 execute as @a[scores={md_action=3}] unless entity @p[scores={md_team=1..8}] run tellraw @s [{"text": "No players on any team, cannot start", "color": "red"}]
 execute as @a[scores={md_action=4}] run function mob_dash:cycle_scoring
 execute as @a[scores={md_action=5}] run function mob_dash:cycle_difficulty
+execute as @a[scores={md_action=6}] run function mob_dash:cancel_tutorial
 execute as @a[scores={md_action=101..109}] run function mob_dash:join_team
 
 scoreboard players set @a md_action 0
