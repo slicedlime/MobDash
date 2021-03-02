@@ -1,6 +1,6 @@
 # Display the menu
 
-tellraw @s [{"text":"Welcome to "},{"text":"Mob Dash!","color":"gold"},{"text":" version "},{"text":"alpha 0.3","color":"gold"},{"text":" by "},{"text":"slicedlime","color":"green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/slicedlime"}}]
+tellraw @s [{"text":"Welcome to "},{"text":"Mob Dash!","color":"gold"},{"text":" version "},{"text":"beta 0.3","color":"gold"},{"text":" by "},{"text":"slicedlime","color":"green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/slicedlime"}}]
 tellraw @s ""
 tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Tutorial", "color":"green","clickEvent":{"action":"run_command", "value":"/trigger md_action set 1"}},{"text":"]","color":"gold", "bold": true}]
 tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Switch Teams", "color":"green","clickEvent":{"action":"run_command", "value":"/trigger md_action set 2"}},{"text":"]","color":"gold", "bold": true}]
