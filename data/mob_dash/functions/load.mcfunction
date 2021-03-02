@@ -23,6 +23,7 @@ scoreboard objectives setdisplay list md_player_scores
 function mob_dash:create_target_scoreboards
 
 scoreboard players set 2 md_const 2
+scoreboard players set 20 md_const 20
 scoreboard players set 1200 md_const 1200
 
 scoreboard players add $Target md_state 0

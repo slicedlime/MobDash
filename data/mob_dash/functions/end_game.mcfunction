@@ -13,6 +13,7 @@ execute store result score $WinningTeams md_state if entity @e[type=area_effect_
 execute if score $WinningTeams md_state matches 2.. run title @a subtitle [{"text":"It's a draw!","color": "gold"}]
 execute if score $WinningTeams md_state matches 1 run title @a subtitle ["",{"text":"Team ","color": "gold"},{"selector":"@e[type=area_effect_cloud,tag=md_winner]"},{"text":" wins!","color":"gold"}]
 title @a title "Game Over"
+bossbar remove mob_dash:timer
 
 scoreboard players set $Tick md_state 0
 
