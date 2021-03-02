@@ -12,4 +12,4 @@ tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Scor
 tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Difficulty: ", "color":"green", "extra": [{"nbt":"Difficulty","storage":"mob_dash:data","color":"aqua"}],"clickEvent":{"action":"run_command","value":"/trigger md_action set 5"}},{"text":"]","color":"gold", "bold": true}]
 tellraw @s [{"text":"- "},{"text":"[","color":"gold","bold": true},{"text":"Start Game", "color":"green","clickEvent":{"action":"run_command", "value":"/trigger md_action set 3"}},{"text":"]","color":"gold", "bold": true}]
 
-scoreboard players set @s md_ticks 0
+scoreboard players set @s md_ticks 1

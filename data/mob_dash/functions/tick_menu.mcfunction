@@ -20,6 +20,11 @@ effect give @a minecraft:weakness 1 100 true
 effect give @a minecraft:mining_fatigue 1 100 true
 effect give @a minecraft:saturation 1 1 true
 
+# Menu handling
+
+scoreboard players add @a md_ticks 0
+execute as @a[scores={md_ticks=0}] run function mob_dash:new_player
+
 scoreboard players add @a md_ticks 1
 
 scoreboard players enable @a md_action
@@ -38,7 +43,8 @@ scoreboard players set @a TimeLimit -2147483648
 
 execute as @a[scores={md_action=1}] run function mob_dash:trigger_tutorial
 execute as @a[scores={md_action=2}] run function mob_dash:display_teams_menu
-execute as @a[scores={md_action=3}] run function mob_dash:start_game
+execute as @a[scores={md_action=3}] if entity @p[scores={md_team=1..8}] run function mob_dash:start_game
+execute as @a[scores={md_action=3}] unless entity @p[scores={md_team=1..8}] run tellraw @s [{"text": "No players on any team, cannot start", "color": "red"}]
 execute as @a[scores={md_action=4}] run function mob_dash:cycle_scoring
 execute as @a[scores={md_action=5}] run function mob_dash:cycle_difficulty
 execute as @a[scores={md_action=101..109}] run function mob_dash:join_team
