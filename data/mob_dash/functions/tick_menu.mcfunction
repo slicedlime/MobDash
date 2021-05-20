@@ -23,7 +23,7 @@ effect give @a minecraft:saturation 1 1 true
 # Menu handling
 
 scoreboard players add @a md_ticks 0
-execute as @a[scores={md_ticks=0}] run function mob_dash:new_player
+execute as @a[tag=!md_assigned] run function mob_dash:new_player
 
 scoreboard players add @a md_ticks 1
 
