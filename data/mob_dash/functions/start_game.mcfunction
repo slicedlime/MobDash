@@ -29,7 +29,7 @@ execute if score $GameDifficulty md_state matches 3 run difficulty hard
 
 # Reset scores
 scoreboard players reset * md_score_display
-scoreboard objectives setdisplay sidebar
+scoreboard objectives setdisplay sidebar md_score_display
 
 # Count team members
 scoreboard players set @e[type=area_effect_cloud,tag=md_team] md_team_count 0
