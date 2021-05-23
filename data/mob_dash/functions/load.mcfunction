@@ -7,6 +7,8 @@ scoreboard objectives add md_ticks dummy "Mob Dash Menu Ticks"
 scoreboard objectives add md_action trigger "Mob Dash Menu Actions"
 scoreboard objectives add WinScore trigger "Mob Dash Win Score"
 scoreboard objectives add TimeLimit trigger "Mob Dash Time Limit"
+scoreboard objectives add OpControl trigger "Op-only control"
+scoreboard objectives add SetTeam dummy "Set Team for player"
 
 # Game states
 scoreboard objectives add md_target dummy "Mob Dash Target ID"
@@ -35,6 +37,8 @@ scoreboard players add $Timeout md_state 0
 
 scoreboard players add $Scoring md_state 0
 scoreboard players add $Difficulty md_state 0
+
+scoreboard players add $OpOnly md_state 0
 
 execute store result score $Temp md_state run difficulty
 execute if score $Temp md_state matches 1.. run scoreboard players operation $GameDifficulty md_state = $Temp md_state

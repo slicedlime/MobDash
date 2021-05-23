@@ -1,12 +1,8 @@
 # Runs for every player on first join_team
 
-scoreboard players set $Random md_state 0
+execute if score $OpOnly md_state matches 1 run function mob_dash:welcome
 
-function mob_dash:randomize_bit
-function mob_dash:randomize_bit
-function mob_dash:randomize_bit
-
-scoreboard players add $Random md_state 101
-scoreboard players operation @s md_action = $Random md_state
+execute unless score @s SetTeam matches 1.. run function mob_dash:randomize_team
+function mob_dash:join_team
 
 tag @s add md_assigned
