@@ -19,7 +19,7 @@ level_1_mobs = [
 ]
 
 level_2_mobs = [
-    'llama',
+    'goat',
     'enderman',
     'dolphin',
     'drowned',

@@ -15,7 +15,7 @@ summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_target","md_level_
 summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_target","md_level_1"], CustomName:'"Bat"', Color:13}
 summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_target","md_level_1"], CustomName:'"Rabbit"', Color:14}
 summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_target","md_level_1"], CustomName:'"Horse"', Color:15}
-summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_target","md_level_2"], CustomName:'"Llama"', Color:16}
+summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_target","md_level_2"], CustomName:'"Goat"', Color:16}
 summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_target","md_level_2"], CustomName:'"Enderman"', Color:17}
 summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_target","md_level_2"], CustomName:'"Dolphin"', Color:18}
 summon area_effect_cloud ~ 1 ~ {Duration:2147483647,Tags:["md_target","md_level_2"], CustomName:'"Drowned"', Color:19}

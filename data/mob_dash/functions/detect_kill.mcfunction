@@ -30,8 +30,8 @@ execute if score $Target md_state matches 14 as @a[scores={md_rabbit=1..}] run f
 scoreboard players reset * md_rabbit
 execute if score $Target md_state matches 15 as @a[scores={md_horse=1..}] run function mob_dash:award_kill
 scoreboard players reset * md_horse
-execute if score $Target md_state matches 16 as @a[scores={md_llama=1..}] run function mob_dash:award_kill
-scoreboard players reset * md_llama
+execute if score $Target md_state matches 16 as @a[scores={md_goat=1..}] run function mob_dash:award_kill
+scoreboard players reset * md_goat
 execute if score $Target md_state matches 17 as @a[scores={md_enderman=1..}] run function mob_dash:award_kill
 scoreboard players reset * md_enderman
 execute if score $Target md_state matches 18 as @a[scores={md_dolphin=1..}] run function mob_dash:award_kill
