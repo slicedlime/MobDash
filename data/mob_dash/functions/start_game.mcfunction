@@ -12,7 +12,7 @@ gamemode survival @a[team=!gray]
 gamemode spectator @a[team=gray]
 clear @a
 
-worldborder set 60000000
+worldborder set 49000000
 
 scoreboard players set $State md_state 1
 scoreboard players set $Target md_state 0
