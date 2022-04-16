@@ -46,5 +46,4 @@ execute if score $Temp md_state matches 1.. run scoreboard players operation $Ga
 function mob_dash:update_scoring_text
 function mob_dash:update_difficulty_text
 
-execute unless entity @e[type=minecraft:area_effect_cloud,tag=md_target] run function mob_dash:create_targets
-execute unless entity @e[type=minecraft:area_effect_cloud,tag=md_team] run function mob_dash:create_teams
+scoreboard players set $LoadCheck md_state 20
