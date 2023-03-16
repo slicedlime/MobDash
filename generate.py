@@ -19,6 +19,8 @@ level_1_mobs = [
 ]
 
 level_2_mobs = [
+    'axolotl',
+    'glow_squid',
     'goat',
     'enderman',
     'dolphin',

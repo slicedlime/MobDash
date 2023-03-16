@@ -15,6 +15,8 @@ scoreboard objectives add md_bee minecraft.killed:minecraft.bee "Mob Dash Bee Ki
 scoreboard objectives add md_bat minecraft.killed:minecraft.bat "Mob Dash Bat Kills"
 scoreboard objectives add md_rabbit minecraft.killed:minecraft.rabbit "Mob Dash Rabbit Kills"
 scoreboard objectives add md_horse minecraft.killed:minecraft.horse "Mob Dash Horse Kills"
+scoreboard objectives add md_axolotl minecraft.killed:minecraft.axolotl "Mob Dash Axolotl Kills"
+scoreboard objectives add md_glow_squid minecraft.killed:minecraft.glow_squid "Mob Dash Glow Squid Kills"
 scoreboard objectives add md_goat minecraft.killed:minecraft.goat "Mob Dash Goat Kills"
 scoreboard objectives add md_enderman minecraft.killed:minecraft.enderman "Mob Dash Enderman Kills"
 scoreboard objectives add md_dolphin minecraft.killed:minecraft.dolphin "Mob Dash Dolphin Kills"
