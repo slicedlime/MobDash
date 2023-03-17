@@ -1,0 +1,3 @@
+- Update to Minecraft 1.19.4
+- Add Axolotls and Glow Squids to tier 2
+- Proper readme
