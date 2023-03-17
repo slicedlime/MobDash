@@ -102,3 +102,16 @@ with open('data/mob_dash/functions/detect_kill.mcfunction', 'w') as file:
         file.write('execute if score $Target md_state matches ' + str(i) + ' as @a[scores={' + scoreboard_name + '=1..}] run function mob_dash:award_kill\n')
         file.write('scoreboard players reset * ' + scoreboard_name + '\n')
         i += 1
+
+with open('tiers.md', 'w') as file:
+    file.write('### Tier 1\n')
+    for mob in level_1_mobs:
+        file.write(f'- {get_display_name(mob)}\n')
+
+    file.write('\n### Tier 2\n')
+    for mob in level_2_mobs:
+        file.write(f'- {get_display_name(mob)}\n')
+
+    file.write('\n### Tier 3\n')
+    for mob in level_3_mobs:
+        file.write(f'- {get_display_name(mob)}\n')
