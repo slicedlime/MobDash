@@ -1,0 +1,16 @@
+{
+    "title": "Mob Dash!",
+    "summary": "A frantic mob hunting minigame",
+    "github": "MobDash",
+    "curseforge_url": "https://www.curseforge.com/minecraft/texture-packs/mob-dash",
+    "curseforge_id": "838852",
+    "modrinth": "mob-dash",
+    "planetminecraft": "https://www.planetminecraft.com/data-pack/mob-dash/",
+    "slicedlime": "mobdash",
+    "package": "MobDash.zip",
+    "source": ".",
+    "supports": [
+        "1.19.4"
+    ],
+    "beta": true
+}
